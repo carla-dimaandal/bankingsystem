@@ -31,3 +31,7 @@ class ATM():
             print(f"PHP {amount} withdrawal successful!")
             print("Current account balance: PHP", self.balance)
             print()
+
+print(
+    'hahahaha'
+)

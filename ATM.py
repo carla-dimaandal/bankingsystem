@@ -19,7 +19,7 @@ class ATM():
         print("Current account balance: PHP", self.balance)
         print()
  
-            def withdraw(self, amount):
+    def withdraw(self, amount):
         self.amount = amount
         if self.amount > self.balance:
             print("Insufficient fund!")
@@ -31,7 +31,3 @@ class ATM():
             print(f"PHP {amount} withdrawal successful!")
             print("Current account balance: PHP", self.balance)
             print()
-
-print(
-    'hahahaha'
-)

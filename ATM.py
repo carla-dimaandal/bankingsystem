@@ -31,3 +31,48 @@ class ATM():
             print(f"PHP {amount} withdrawal successful!")
             print("Current account balance: PHP", self.balance)
             print()
+
+    def transaction(self):
+        print("""
+            TRANSACTION 
+        *********************
+            Menu:
+            1. Account Detail
+            2. Check Balance
+            3. Deposit
+            4. Withdraw
+            5. Exit
+        *********************
+        """)
+        
+        while True:
+            try:
+                option = int(input("Enter Choice -> "))
+            except:
+                print("Error: Enter 1, 2, 3, 4, or 5 only!\n")
+                continue
+            else:
+                if option == 1:
+                    atm.account_detail()
+                elif option == 2:
+                    atm.check_balance()
+                elif option == 3:
+                    amount = int(input("How much you want to deposit(PHP):"))
+                    atm.deposit(amount)
+                elif option == 4:
+                    amount = int(input("How much you want to withdraw(PHP):"))
+                    atm.withdraw(amount)
+                elif option == 5:
+                    print(f"""
+                printing receipt..............
+          ******************************************
+              Transaction is now complete.                         
+              Transaction number: {random.randint(10000, 1000000)} 
+              Account holder: {self.name.upper()}                  
+              Account number: {self.account_number}                
+              Available balance: PHP {self.balance}                    
+ 
+              Thanks for choosing us as your bank                  
+          ******************************************
+          """)
+                    sys.exit()

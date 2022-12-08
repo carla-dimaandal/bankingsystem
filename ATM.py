@@ -76,3 +76,12 @@ class ATM():
           ******************************************
           """)
                     sys.exit()
+
+print("*******WELCOME TO OUR BANK*******")
+print("___________________________________________________________\n")
+print("----------ACCOUNT CREATION----------")
+name = input("Enter your name: ")
+account_number = input("Enter your account number: ")
+print("Congratulations! Account created successfully......\n")
+ 
+atm = ATM(name, account_number)

@@ -106,34 +106,34 @@ class SALARY(Savings.SAVINGS):
                 print("Invalid Deposit. Please Deposit Atleast 10000 and Above")
                                                         
        def runSALARY():
-                                                            print("*****WELCOME TO OUR BANK*****")
-                                                            print("___________________________________________________________\n")
-                                                            print("----------ACCOUNT CREATION----------")
-                                                            name = input("Enter your name: ") 
-                                                            address = input("Enter your Address: ")
-                                                            phone_number = input("Enter your Phone Number: ")
-                                                            employer = input("Enter your employer: ")
-                                                            empID = input("Employee ID: ")
-                                                            pin = Savings.SAVINGS.user_pin()
-                                                            balance = SALARY.use_balance()
-                                                            print("Congratulations! Account created successfully......\n")
-                                                            global salary
-                                                            salary = SALARY(name, address, pin, phone_number, employer, empID, balance)
+           print("*****WELCOME TO OUR BANK*****")
+           print("___________________________________________________________\n")
+           print("----------ACCOUNT CREATION----------")
+           name = input("Enter your name: ") 
+           address = input("Enter your Address: ")
+           phone_number = input("Enter your Phone Number: ")
+           employer = input("Enter your employer: ")
+           empID = input("Employee ID: ")
+           pin = Savings.SAVINGS.user_pin()
+           balance = SALARY.use_balance()
+           print("Congratulations! Account created successfully......\n")
+           global salary
+           salary = SALARY(name, address, pin, phone_number, employer, empID, balance)
                                                             
-                                                            while True:
-                                                                trans = input("Do you want to do any transaction? (y/n):")
-                                                                if trans == "y":
-                                                                    salary.transaction()
-                                                                    elif trans == "n":
-                                                                        print("""
-                                                                        --------------------------------------
-                                                                        | Thanks for choosing us as your bank |
-                                                                        | Visit us again!                     |
-                                                                        --------------------------------------
-                                                                        """)
-                                                                        break
-                                                                        else:
-                                                                            print("Wrong command! Enter 'y' for YES and 'n' for NO.\n")
+                        while True:
+                        trans = input("Do you want to do any transaction? (y/n):")
+                        if trans == "y":
+                        salary.transaction()
+                        elif trans == "n":
+                        print("""
+                        --------------------------------------
+                        | Thanks for choosing us as your bank |
+                        | Visit us again!                     |
+                        --------------------------------------
+                        """)
+                        break
+                        else:
+                        print("Wrong command! Enter 'y' for YES and 'n' for NO.\n")
                                                                         
                                                                               
                                                             

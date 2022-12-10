@@ -96,18 +96,17 @@ class SALARY(Savings.SAVINGS):
                                             salary.print_salary()
                                             sys.exit()
                                             
-                                            def user_balance():
-                                                while True: 
-                                                    print("\nInitial Deposit Must be 10000 Pesos and Above")
-                                                    balance = float(input("Enter "))
-                                                    if balance >= 10000:
-                                                        return balance 
-                                                    else:
-                                                        print("Invalid Deposit. Please Deposit Atleast 10000 and Above")
+       def user_balance():
+                while True: 
+                print("\nInitial Deposit Must be 10000 Pesos and Above")
+                balance = float(input("Enter "))
+                if balance >= 10000:
+                return balance 
+                else:
+                print("Invalid Deposit. Please Deposit Atleast 10000 and Above")
                                                         
-                                                        def runSALARY():
+       def runSALARY():
                                                             print("*****WELCOME TO OUR BANK*****")
-                                                            
                                                             print("___________________________________________________________\n")
                                                             print("----------ACCOUNT CREATION----------")
                                                             name = input("Enter your name: ") 

@@ -44,23 +44,7 @@ class SAVINGS:
         print("\nAvailable Balance: PHP", self.balance)
         print("\n\n")
 
-    def user_pin():
-        while True:
-            pin = int(input("Enter 4 digit pin: "))
-            if len(str(pin)) == 4:
-                return pin
-            else:
-                print("Invalid Pin. Please Enter 4 digit pin")
-    
-    def user_balance():
-        while True:
-            print("\nInitial Deposit Must be 5000 Pesos and Above")
-            balance = float(input("Enter  "))
-            if balance >= 5000:
-                return balance
-            else:
-                print("Invalid Deposit. Please Deposit Atleast 5000 and Above")
-      def display_receipt(self):
+    def display_receipt(self):
         print(f"""
                 Printing Receipt..............
           **************************************
@@ -153,3 +137,5 @@ class SAVINGS:
                 break
             else:
                 print("Wrong Command!  Enter 'y' for yes and 'n' for no.\n")
+
+    

@@ -62,87 +62,75 @@ class SALARY(Savings.SAVINGS):
                       Thanks for choosing us as your bank                  
                   **************************************
                   """)
-        
-        def transaction (self):
-            while True: 
-                print("""
-                TRANSACTION
-             *****************
+
+    def transaction(self):
+       while True:
+            print("""
+                TRANSACTION 
+            *****************
              Menu:
-             1. Account Detail 
-             2. Check Balance
-             3. Deposit
-             4. Withdraw
-             5. Exit
-             *****************
-             """)
-                try: 
-                    option = int(input("Enter Choice ->"))
-                except: 
-                    print("Error: Enter 1, 2, 3, 4, or 5 only!\n")
-                    continue
-                else:
-                    if option == 1:
-                        salary.salary_details()
-                    elif option == 2:
-                        salary.check_balance()
-                    elif option == 3:
-                        amount = int(input("How much you want to deposit(PHP):"))
-                        salary.deposit(amount)
-                    elif option == 4:
-                        ampunt == int(input("How much you want to withdraw(PHP):"))
-                        salary.withdraw_pass(amount)
-                    elif option == :
-                        salary.print_salary()
-                        sys.exit()
-                                            
-       def user_balance():
-                while True: 
-                print("\nInitial Deposit Must be 10000 Pesos and Above")
-                balance = float(input("Enter "))
-                if balance >= 10000:
-                return balance 
-                else:
+                1. Account Detail
+                2. Check Balance
+                3. Deposit
+                4. Withdraw
+                5. Exit
+            *****************
+                    """)
+            try:
+                option = int(input("Enter Choice ->"))
+            except:
+                print("Error: Enter 1, 2, 3, 4, or 5 only!\n")
+                continue
+            else:
+                if option == 1:
+                    salary.salary_details()
+                elif option == 2:
+                    salary.check_balance()
+                elif option == 3:
+                    amount = int(input("How much you want to deposit(PHP):"))
+                    salary.deposit(amount)
+                elif option == 4:
+                    amount = int(input("How much you want to withdraw(PHP):"))
+                    salary.withdraw_pass(amount)
+                elif option == 5:
+                    salary.print_salary()
+                    sys.exit()
+
+    def user_balance():
+        while True:
+            print("\nInitial Deposit Must be 10000 Pesos and Above")
+            balance = float(input("Enter  "))
+            if balance >= 10000:
+                return balance
+            else:
                 print("Invalid Deposit. Please Deposit Atleast 10000 and Above")
-                                                        
-       def runSALARY():
-           print("*****WELCOME TO OUR BANK*****")
-           print("___________________________________________________________\n")
-           print("----------ACCOUNT CREATION----------")
-           name = input("Enter your name: ") 
-           address = input("Enter your Address: ")
-           phone_number = input("Enter your Phone Number: ")
-           employer = input("Enter your employer: ")
-           empID = input("Employee ID: ")
-           pin = Savings.SAVINGS.user_pin()
-           balance = SALARY.use_balance()
-           print("Congratulations! Account created successfully......\n")
-           global salary
-           salary = SALARY(name, address, pin, phone_number, employer, empID, balance)
-                                                            
-           while True:
-                trans = input("Do you want to do any transaction? (y/n):")
-                if trans == "y":
-                    salary.transaction()
-                elif trans == "n":
-                    print("""
-                --------------------------------------
-                | Thanks for choosing us as your bank |
-                | Visit us again!                     |
-                --------------------------------------
-                        """)
-                    break
-                else:
-                    print("Wrong command! Enter 'y' for YES and 'n' for NO.\n")
-                        
-                                                                        
-                                                                              
-                                                            
-                                                            
-                                                            
-                                                                
-                                                    
-                                                    
-                                            
-                                    
-         
+    
+    def runSALARY():
+        print("\n*****WELCOME TO OUR BANK*****")
+        print("___________________________________________________________\n")
+        print("----------ACCOUNT CREATION----------")
+        name = input("Enter your name: ")
+        address = input("Enter Your Address: ")
+        phone_number = input("Enter Your Phone Number: ")
+        employer = input("Enter your employer: ")
+        empID = input("Employee ID: ")
+        pin = Savings.SAVINGS.user_pin()
+        balance = SALARY.user_balance()
+        print("Congratulations! Account created successfully......\n")
+        global salary
+        salary = SALARY(name, address, pin, phone_number, employer, empID, balance)
+
+        while True:
+            trans = input("Do you want to do any transaction?(y/n):")
+            if trans == "y":
+                salary.transaction()
+            elif trans == "n":
+                print("""
+            -------------------------------------
+            | Thanks for choosing us as your bank |
+            | Visit us again!                     |
+            -------------------------------------
+                    """)    
+                break
+            else:
+                print("Wrong command!  Enter 'y' for yes and 'n' for NO.\n")

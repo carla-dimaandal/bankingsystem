@@ -3,5 +3,5 @@
 ### The program used python libraries: sys, random
 #### The program utilized OBJECT-ORIENTED PROGRAMMING
 
-![image](https://user-images.githubusercontent.com/117631564/206855822-a1640ade-11ed-469b-80b2-06f3a250ad70.png)
+![image](https://user-images.githubusercontent.com/115076603/206905981-9e5c3f37-42d8-44d7-abd2-e046e08afb04.png)
 

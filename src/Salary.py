@@ -78,23 +78,23 @@ class SALARY(Savings.SAVINGS):
              """)
                 try: 
                     option = int(input("Enter Choice ->"))
-                    except: 
-                        print("Error: Enter 1, 2, 3, 4, or 5 only!\n")
-                        continue
-                        else:
-                            if option == 1:
-                                salary.salary_details()
-                                elif option == 2:
-                                    salary.check_balance()
-                                    elif option == 3:
-                                        amount = int(input("How much you want to deposit(PHP):"))
-                                        salary.deposit(amount)
-                                        elif option == 4:
-                                        ampunt == int(input("How much you want to withdraw(PHP):"))
-                                        salary.withdraw_pass(amount)
-                                        elif option == :
-                                            salary.print_salary()
-                                            sys.exit()
+                except: 
+                    print("Error: Enter 1, 2, 3, 4, or 5 only!\n")
+                    continue
+                else:
+                    if option == 1:
+                        salary.salary_details()
+                    elif option == 2:
+                        salary.check_balance()
+                    elif option == 3:
+                        amount = int(input("How much you want to deposit(PHP):"))
+                        salary.deposit(amount)
+                    elif option == 4:
+                        ampunt == int(input("How much you want to withdraw(PHP):"))
+                        salary.withdraw_pass(amount)
+                    elif option == :
+                        salary.print_salary()
+                        sys.exit()
                                             
        def user_balance():
                 while True: 
@@ -120,20 +120,20 @@ class SALARY(Savings.SAVINGS):
            global salary
            salary = SALARY(name, address, pin, phone_number, employer, empID, balance)
                                                             
-                        while True:
-                        trans = input("Do you want to do any transaction? (y/n):")
-                        if trans == "y":
-                        salary.transaction()
-                        elif trans == "n":
-                        print("""
-                        --------------------------------------
-                        | Thanks for choosing us as your bank |
-                        | Visit us again!                     |
-                        --------------------------------------
+           while True:
+                trans = input("Do you want to do any transaction? (y/n):")
+                if trans == "y":
+                    salary.transaction()
+                elif trans == "n":
+                    print("""
+                --------------------------------------
+                | Thanks for choosing us as your bank |
+                | Visit us again!                     |
+                --------------------------------------
                         """)
-                        break
-                        else:
-                        print("Wrong command! Enter 'y' for YES and 'n' for NO.\n")
+                    break
+                else:
+                    print("Wrong command! Enter 'y' for YES and 'n' for NO.\n")
                         
                                                                         
                                                                               

@@ -21,4 +21,4 @@ Execution 4/4 <br>
 Originality 4/4 <br>
 Overall impression 4/4 
 
-Video Link: [Video Presentation] (https://www.youtube.com/watch?v=2ee2iAZHNPs&ab_channel=LANCEFREDERICKDIMAANO-BSU)
+Video Link: [Video Presentation](https://www.youtube.com/watch?v=2ee2iAZHNPs&ab_channel=LANCEFREDERICKDIMAANO-BSU)

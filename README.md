@@ -25,3 +25,12 @@ Originality 4/4 <br>
 Overall impression 4/4 
 
 Video Link: [Video Presentation](https://www.youtube.com/watch?v=2ee2iAZHNPs&ab_channel=LANCEFREDERICKDIMAANO-BSU)
+
+Timestamp: <br>
+00:00 -Dimaandal, Carla Francesca <br>
+
+00:42 -Dimaano, Lance Frederick <br> 
+
+2:25 -Boongaling, Jan Andrei <br>
+
+4:19 -Flores, Julie Anne

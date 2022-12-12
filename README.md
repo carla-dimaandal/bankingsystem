@@ -12,7 +12,7 @@ If the user chooses: <br>
 5 - Exit
 
 
-##UML Diagram
+## UML Diagram
 
 ![uml](https://user-images.githubusercontent.com/117631564/206940261-7f349605-0c13-437c-aeb5-6d36f19c97e0.png)
 

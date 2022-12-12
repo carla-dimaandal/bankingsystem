@@ -10,8 +10,56 @@ If the user chooses: <br>
 3 - Deposit <br>
 4 - Withdraw <br>
 5 - Exit
+<div hidden>
+@startuml uml
+class Savings <|--class Salary
+class Savings {
+  name
+  address
+  pin
+  phone_number
+  balance
+  +account_detail()
++deposit()
++withdraw()
++check_balance()
++display_receipt()
++transaction()
++user_pin()
++user_balance()
++runSAVINGS()
 
-![image](https://user-images.githubusercontent.com/115076603/206905981-9e5c3f37-42d8-44d7-abd2-e046e08afb04.png)
+}
+
+class Salary {
+name
+address
+pin
+phone_number
+employer
+empID
+balance
+account_number
++getName()
++getAddress()
++getPhone_number()
++getAccountNumber
++getBalance()
++getEmployer()
++getEmpID()
++salary_details()
++withdraw_pass()
++print_salary()
++transaction()
++user_balance()
++runSALARY
+
+
+
+}
+@enduml
+<\div>
+![](firstDiagram.svg)
 
 Ratings: <br>
 Code Reusability 4/4 <br>
